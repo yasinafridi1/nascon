@@ -1,0 +1,96 @@
+
+    <div class="header">
+        <div class="nav-bar">
+            <ul class="menu">
+                <li class="menu-items">
+                    <a href="/"> My Profile</a>
+                </li>
+                <li class="menu-items">
+                    <a href="#">Community</a>
+                </li>
+                <li class="menu-items">
+                    <a href="/chat">Chat</a>
+                </li>
+                <li class="menu-items">
+                    <a href="#">Events</a>
+                </li>
+                <li class="menu-items">
+                   <a href="/logout">Logout</a>
+                </li>
+            </ul>
+            <div class="dropdown">
+                <i class="fa fa-bars mainmenubtn" aria-hidden="true"></i>
+                <ul class="dropdown-child">
+                    <li class="menu-items">
+                        <a href="/"> My Profile</a>
+                    </li>
+                    <li class="menu-items">
+                        <a href="#">Community</a>
+                    </li>
+                    <li class="menu-items">
+                        <a href="#">Chat</a>
+                    </li>
+                    <li class="menu-items">
+                        <a href="#">Events</a>
+                    </li>
+                    <li class="menu-items">
+                        <a href="/logout">Logout</a>
+                        <!-- <form action="/logout" method="post" id="logout">
+                            <a onclick="document.getElementById('logout').submit()" class="nav-link">Logout</a>
+                          </form> -->
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="profile">
+            <img src="./images/1.png" alt="Not Found...!">
+        </div>
+        <div class="details">
+            <div class="side1">
+                <div class="text_data">
+                    Full Name
+                </div>
+                <div class="full_name">
+                    <%= currUser.fullName %>
+                </div>
+                <div class="text_data">
+                    Father Name
+                </div>
+                <div class="father_name">
+                    <%= currUser.fatherName %>
+                 
+                </div>
+                <div class="text_data">
+                    Email
+                </div>
+                <div class="email_data">
+                    <%= currUser.email %>
+                   
+                </div>
+            
+                <div class="text_data">
+                    Phone Number
+                </div>
+                <div class="phone_no">
+                    <%= currUser.phone %>
+
+                </div>
+                <div class="text_data">
+                    Date Of Birth
+                </div>
+                <div class="d_o_b">
+                    <%= currUser.dateofbirth %>
+
+                </div>
+                <div class="text_data">
+                    Rank
+                </div>
+                <div class="rank_data">
+                    <%= currUser.rank %>
+
+                </div>
+            </div>
+
+        </div>
+        
+    </div>

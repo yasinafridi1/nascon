@@ -1,0 +1,447 @@
+:root {
+    --bg_a: #0F2027;
+    --bg_b: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
+    --bg_c: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+    --btn_bg: rgb(255, 153, 0);
+    --btn_c: #fff;
+
+    --main_clr: white;
+    --main_line: white;
+    --t_clr: #fff;
+    --role_clr: white;
+}
+
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif !important;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: #0b588b;
+}
+
+.role {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    color: var(--role_clr);
+}
+
+.flexR {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.container>h1 {
+    color: var(--t_clr);
+    font-weight: bold;
+    font-size: 55px;
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+    text-shadow: 0px 0px 10px #FF9900;
+}
+
+.container>h1::after {
+    content: "";
+    position: absolute;
+    bottom: -40%;
+    left: 0%;
+    width: 100%;
+    height: 5px;
+    background-color: #FF9900;
+}
+
+.container {
+    height: 50vh;
+    box-shadow: 0px 0px 20px 0px #12375ccf;
+    ;
+    border-radius: 6px;
+    width: 450px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    padding-bottom: 20px;
+}
+
+.error-div {
+    height: 30px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: red;
+}
+
+.error-msg {
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.flexC {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#fData{
+    height: 100vh !important;
+    
+}
+
+#username,
+#password {
+    height: 100%;
+    width: 85%;
+    background-color: #ffffff9a;
+    border: 0px;
+    outline: none;
+    padding: 8px 10px;
+    color: black;
+    font-size: 1.9ch;
+    font-weight: bold;
+}
+
+#username::placeholder,
+#password::placeholder {
+    color: rgba(0, 0, 0, 0.555);
+}
+
+.iconD {
+    width: 15% !important;
+    background-color: #FF9900;
+    height: 100%;
+    color: black;
+
+}
+
+.username,
+.password {
+    width: 350px;
+    height: 7vh;
+    margin-bottom: 20px;
+}
+
+#sBtn {
+    background-color: var(--btn_bg);
+    border: 3px solid black;
+    width: 250px;
+    color: black;
+    width: 350px;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px 0px 10px 0px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.btns {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btns>button {
+    width: 50%;
+}
+
+a {
+    color: white;
+    text-align: center;
+    width: 100px;
+    margin-left: 80px;
+}
+
+.roles {
+    width: 50%;
+}
+
+.roles>label:nth-child(2) {
+    margin-right: 25px;
+}
+
+#sData {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    overflow: hidden;
+}
+
+.s_c,
+.s_v {
+    color: white;
+}
+
+.roles>input {
+    margin-right: 5px;
+}
+
+.select_role {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.newOne {
+    height: 50vh;
+    overflow: hidden;
+}
+
+.ssBtn {
+    background-color: #FF9900;
+    border: 2px solid white;
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 2ch;
+    color: white;
+    transition: 1s background;
+}
+
+.ssBtn:hover {
+    background-color: white;
+    color: #FF9900;
+}
+
+.yess {
+    height: 100vh !important;
+}
+
+#rcData {
+    height: 90%;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.reg_text {
+    height: 20%;
+}
+
+.yess {
+    width: 60%;
+}
+
+.container>.reg_text {
+    height: 20vh;
+}
+
+.container>.reg_text::after {
+    content: "";
+    position: absolute;
+    bottom: -10%;
+    left: 0%;
+    width: 100%;
+    height: 5px;
+    background-color: #FF9900;
+}
+
+.i_con {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 6vh;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.i_con>input {
+    height: 100%;
+    width: 70%;
+    font-size: 19px;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+.i_con>label {
+    height: 100%;
+    width: 30%;
+    color: white;
+}
+
+.i_con>select {
+    width: 70%;
+    height: 100%;
+}
+
+.container>h1 {
+    font-size: 2em;
+}
+
+.header {
+    background: url("./img/banner.jpg");
+    height: 100vh;
+    width: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: top;
+}
+
+.nav-bar {
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #3e8e41;
+    padding: 0px 25px;
+}
+
+.nav-bar>ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+.menu-items>a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.mainmenubtn {
+    /* background-color: skyblue; */
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.mainmenubtn:hover {
+    background-color: rgba(0, 0, 0, 0.144);
+    border-radius: 50%;
+
+}
+
+.dropdown {
+    display: inline-block;
+    margin-bottom: 4px;
+}
+
+.dropdown-child {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.616);
+    min-width: 150px;
+    position: absolute;
+    top: 10%;
+    right: 0%;
+}
+
+.dropdown-child li {
+    color: blue;
+    padding: 20px;
+    text-decoration: none;
+    list-style: none;
+    display: block;
+}
+
+i{
+    height: 100%;
+    margin: 0% !important;
+    font-size: 20px;
+}
+
+.dropdown:hover .dropdown-child {
+    display: block;
+    height: 90%;
+}
+
+.li:hover{
+    background-color: #FF9900;
+}
+
+.log{
+    height: 80vh;
+}
+.log > h1{
+    height: 20%;
+}
+
+.log > #fData{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+    width: 100%;
+}
+
+.log > #fData > .btns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.log > #fData > .btns > a{
+    width: 100%;
+    height: 2vh;
+    margin: 0%;
+}
+
+
+#fData{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile > img{
+    width: 20%;
+}
+
+.profile{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.side1 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.side1 > .text_data{
+    color: white;
+    width: 50%;
+    margin: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.full_name, .father_name, .email_data, .phone_no,
+.d_o_b, .rank_data{
+
+}

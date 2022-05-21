@@ -1,0 +1,32 @@
+
+<section class="flexC">
+    <div class="container log flexC">
+        <h1 class="flexC">LOGIN</h1>
+        <form action="/login" method="post" class="flexC" id="fData">
+            <div class="error-div">
+                <% if(messages.error) { %>
+                    <p class="error-msg"><%= messages.error %></p>
+                    <% } %>
+            </div>
+
+            <div class="username flexR">
+                <div class="iconD flexC">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                </div>
+                <input type="email" name="email" id="username" placeholder="Enter Your email...">
+            </div>
+
+            <div class="password  flexR">
+                <div class="iconD flexC">
+                    <i class="fa fa-key" aria-hidden="true"></i>
+                </div>
+                <input type="password" name="password" id="password" placeholder="Enter Your Password...">
+            </div>
+            <div class="btns">
+                <button type="submit" id="sBtn">LOGIN</button>
+                <br>
+                <a href="#" class="newAcc">Create New Account...!</a>
+            </div>
+        </form>
+    </div>
+</section>

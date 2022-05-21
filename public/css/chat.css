@@ -1,0 +1,164 @@
+
+
+.chatSection{
+    height: 100vh;
+    /* background-color: rgb(200, 200, 200); */
+    width: 100vw;
+    position: relative;
+    z-index:9;
+    overflow-y: scroll;
+}
+.chatHeader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0b588b;
+    height: 60px;
+    width: 100vw;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0%;
+    z-index: 9;
+}
+.chatHeader h1{
+    font-weight: bold;
+    font-size: 28px;
+    letter-spacing: 3px;
+    color: white;
+}
+.allChat{
+
+    padding-bottom: 15px;
+}
+.singleUser{
+    width: 100%;
+    background-color: rgb(220, 218, 218);
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 6px 10px;
+    text-decoration: none;
+    border-bottom: 1px solid black;
+
+}
+.userImage{
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.userImage img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.userName h2{
+    font-size: 23px;
+    color: rgb(42, 41, 41);
+}
+.back{
+    width:7%;
+    text-align: center;
+}
+
+.back i{
+    font-size: 25px;
+   color: white;
+   transition: all .3s ease-in-out;
+}
+.back i:hover{
+    color: black;
+}
+
+.img{
+    padding: 3px 10px;
+    width: 6%;
+    height: 60px;
+    border-radius: 50%;
+}
+.username{
+    width:87%;
+    padding-left: 15px;
+}
+
+.chatBodySection{
+    width: 100%;
+    height: 90vh;
+    background-color: gray;
+    overflow-y: hidden;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.chatBody{
+    width: 90%;
+    height: 90%;
+    background-color: white;
+    padding: 13px 8px;
+}
+
+.messageBox{
+    height: 100%;
+    overflow-y:scroll;
+}
+
+.messages{
+    width: 100%;
+    min-height: 35px;
+    margin-bottom: 3px;
+    padding: 4px 12px;
+    position: relative;
+}
+.messages .msg{
+    font-size: 19px;
+    padding: 7px 10px;
+    background-color: #0197fc;
+    border-radius: 10px;
+    margin-top: 8px;
+}
+.msgSender{
+    padding-right: 160px;
+    float: right;
+    clear: both;
+}
+.msgReciever{
+    float: left;
+    clear: both;
+}
+
+
+.msgForm{
+    height: 12%;
+    width: 90%;
+    background-color: #0b588b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.msgForm input{
+    width: 60%;
+    font-size: 24px;
+    padding: 6px 15px;
+    border-radius: 9px;
+    outline: none;
+    border: none;
+}
+.msgForm .btn{
+    font-size: 22px;
+    padding: 7px 23px;
+    border-radius: 9px;
+    margin-left: 10px;
+    font-weight: bold;
+    border:1px solid #0b588b;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+
+.msgForm .btn:hover{
+    color: white;
+    background-color: rgb(45, 43, 43);
+}

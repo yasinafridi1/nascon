@@ -1,0 +1,62 @@
+<section class="flexC">
+    <div class="container yess flexC">
+        <h1 class="flexC reg_text">REGISTRATION</h1>
+        <form action="/register" method="post" class="flexC" id="rcData">
+            <div class="error-div">
+                <% if(messages.error) { %>
+                    <p class="error-msg"><%= messages.error %></p>
+                    <% } %>
+            </div>
+            <div class="i_con">
+                <label for="fullName">Full Name</label>
+                <input type="text" name="fullName" required id="fullName">
+            </div>
+            <div class="i_con">
+                <label for="fullName">Father Name</label>
+                <input type="text" name="fatherName" required id="fullName">
+            </div>
+            <div class="i_con">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+
+            <div class="i_con">
+                <label for="pNo">Phone #</label>
+                <input type="text" name="pNo" id="pNo" required>
+            </div>
+
+            <div class="i_con">
+                <label for="dob">Date Of Birth</label>
+                <input type="date" name="dob" id="dob" required>
+            </div>
+
+            <div class="i_con">
+                <label for="dob">Password</label>
+                <input type="password" name="epassword" id="epassword" placeholder="Enter Your Password...">
+            </div>
+
+            <div class="i_con">
+                <label for="dob">ConfirmPassword</label>
+                <input type="password" name="cpassword" id="cpassword" placeholder="Confirm Your Password...">
+            </div>
+
+            <div class="i_con">
+                <label for="rank">Rank</label>
+                <select name="rank" id="rank">
+                    <option value="E-1">E-1</option>
+                    <option value="E-2">E-2</option>
+                    <option value="E-3">E-3</option>
+                    <option value="E-4">E-4</option>
+                    <option value="E-5">E-5</option>
+                    <option value="E-6">E-6</option>
+                    <option value="E-7">E-7</option>
+                </select>
+            </div>
+
+            <div class="btns">
+                <button type="submit" id="sBtn">Register</button>
+                <br>
+            </div>
+        </form>
+    </div>
+</section>
